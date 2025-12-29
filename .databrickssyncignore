@@ -1,0 +1,37 @@
+# Node/JS artifacts
+node_modules
+.next
+dist
+build
+.cache
+.turbo
+.swc
+.vercel
+coverage
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+pnpm-lock.yaml
+
+# OS/editor noise
+.DS_Store
+.idea
+.vscode
+*.swp
+
+# Git and CI
+.git
+.gitignore
+.gitattributes
+.github
+
+# Env and secrets
+.env
+.env.*
+.env.local
+.env.production
+.env.development
+.env.test
+.npmrc
+.databrickscfg

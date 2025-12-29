@@ -1,0 +1,6 @@
+command: ["npm", "run", "start"]
+runtime: nodejs20
+
+env:
+  - name: 'DATABRICKS_SERVING_ENDPOINT'
+    value: 'databricks-gpt-5'

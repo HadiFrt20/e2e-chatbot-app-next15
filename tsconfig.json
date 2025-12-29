@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "baseUrl": ".",
+    "types": ["@types/node"],
+    "paths": {
+      "@/*": ["./app/*"],
+      "@chat-template/core": ["./packages/core/src/index.ts"],
+      "@chat-template/core/errors": ["./packages/core/src/errors.ts"],
+      "@chat-template/utils": ["./packages/utils/src/index.ts"],
+      "@chat-template/auth": ["./packages/auth/src/index.ts"],
+      "@chat-template/ai-sdk-providers": ["./packages/ai-sdk-providers/src/index.ts"],
+      "@chat-template/ai-sdk-providers/tools": ["./packages/ai-sdk-providers/src/databricks-provider/databricks-tool-calling.ts"],
+      "@chat-template/db": ["./packages/db/src/index.ts"]
+    },
+    "plugins": [{ "name": "next" }]
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules", "dist"]
+}
